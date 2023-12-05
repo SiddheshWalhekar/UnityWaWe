@@ -1,0 +1,86 @@
+.nav{
+    justify-content:space-evenly;
+    background-color: rgb(3, 123, 153);
+    padding: 6px;
+    max-width:100%;
+
+    
+}
+
+.nav h1{
+    color: aliceblue;
+    margin: 0;
+    font-size: 90 px;
+    margin-top: 9px;
+}
+
+
+.nav ul{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+    padding-right: 10%;
+    padding-left: 5px;
+}
+
+.nav li{
+    padding-left: 10%;
+    padding-top:9px ;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav .nav-search{
+    position: relative;
+    flex: 1;
+    display: flex;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+
+.nav input{
+    flex: 1;
+    display: flex;
+    border: 1px solid black;
+    height: 35px;
+    border-right: 0px;
+    
+}
+
+.nav img{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.nav button{
+    border: 1px solid black;
+    height: 35px;
+    width: 70px;
+    padding-left: 5px;
+}
+
+.suggestion{
+    list-style-type:none;
+    position:absolute;
+    margin-bottom : 200px;
+    display: list-item;
+    z-index: 10;
+    margin-left: 100px; 
+    background-color: rgb(255, 255, 255);
+    width: 380px;   
+    color: rgb(121, 121, 121);
+    font-size: 0.9rem;
+
+}
+
+.suggestion li{
+    border: 1px solid #fff;
+}
+.suggestion li .a{
+    cursor: pointer;
+    
+}

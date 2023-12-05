@@ -1,0 +1,28 @@
+<div class="row search-item" *ngFor="let  item of searchClothes">
+    <div class="col-sm-4">
+        <a routerLink="/details/{{item.id}}">
+           <img src="{{item.image}}" alt="">   
+        </a>
+     </div>
+    <div class="col-sm-8 details">
+        <a routerLink="/details/{{item.id}}">
+        <h2><b>{{item.name}}</b></h2><br>
+        </a>
+        <p><b>Quantity: {{item.quantity}}</b></p>
+        <p>{{item.description}}</p>
+    </div>
+</div>
+
+
+<div class="row search-item" *ngFor="let  item of searchStationary">
+    <div class="col-sm-4">
+        <a routerLink="/details/{{item.id}}">
+            <img src="{{item.image}}" alt="">   
+         </a>
+    </div>
+    <div class="col-sm-8 details">
+        <h2><b>{{item.name}}</b></h2><br>
+        <p><b>Quantity: {{item.quantity}}</b></p>
+        <p>{{item.description}}</p>
+    </div>
+</div>

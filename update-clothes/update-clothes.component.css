@@ -1,0 +1,40 @@
+.form{
+    background-color: rgb(3, 123, 153);
+    color: aliceblue;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.donateform{
+    background-color: rgb(237, 237, 237);
+    margin-right: 300px;
+    text-align:center;
+    margin-left: 300px;
+    padding-top: 30px;
+    margin-top: 150px;
+    border: solid rgb(173, 173, 173) 2px;
+}
+
+.input *{
+    width: 80%;
+}
+.list_btn{
+    margin-left: 1150px;
+    background-color: #4CAF50;
+    font-size: 16px;}
+
+    .add-product{
+        text-align: center;
+        margin-top: 100px;
+        background-color: rgb(3, 123, 153);
+        margin-left: 400px;
+        margin-right: 400px; ;
+        padding-top: 15px;
+        padding-bottom: 70px;
+        color: rgb(255, 255, 255);
+    
+    }
+
+.common-form *{
+    width: 50% ;
+}

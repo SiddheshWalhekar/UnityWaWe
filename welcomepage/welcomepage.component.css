@@ -1,0 +1,36 @@
+img{
+    
+  padding: 5px;
+  width: 500px;
+  margin-left: 450px;
+}
+.info{
+    background-color: rgb(3, 123, 153);
+    border-radius: 10px;
+    color: aliceblue;
+    padding-top: 20px;
+    padding-bottom:25px;
+}
+
+.info button{
+    color: rgb(8, 0, 0);
+    background-color: rgb(246, 255, 0);
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 20px; 
+    margin-left: 50%;
+    
+}
+
+.cd{
+  display:inline-block;
+  text-align: center;
+  margin-left: 150px;
+}
+.sd{
+  display:inline-block;
+  text-align: center;
+}
+.logo{
+  display:inline-block;
+}

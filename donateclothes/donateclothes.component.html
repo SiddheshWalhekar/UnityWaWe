@@ -1,0 +1,33 @@
+<br>
+<a routerLink="/list" class="list_btn"><button>DONATION LIST</button></a>
+
+<div class="add-product">
+
+
+  <h1>Donate Clothes</h1>
+
+  <p class="message">{{addProductMessage}}</p>
+  <br><br><br>
+  <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
+
+
+    <input type="text" class="form-input" placeholder="Enter Clothes Type" name="name" ngModel />
+    <br><br>
+
+    <input type="text" class="form-input" placeholder="Gender" name="gender" ngModel />
+    <br><br>
+    <textarea type="text" class="form-input" placeholder="Enter Product Description" name="description"
+      ngModel></textarea>
+    <br><br>
+    <input type="text" class="form-input" placeholder="Quantity" required #quantity="ngModel" name="quantity" ngModel />
+    <br><span *ngIf="quantity.invalid && quantity.touched ">Please enter valid quantity</span>
+
+    <br><br>
+    <input type="text" class="form-input" placeholder="Enter Product Image URL" name="image" ngModel />
+
+    <br><br>
+    <br><br>
+    <button [disabled]="addProduct.invalid" class="form-button">Add Product</button>
+
+  </form>
+</div>

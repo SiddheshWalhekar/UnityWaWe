@@ -1,0 +1,60 @@
+.browse{
+    background-color:rgb(3, 100, 129);
+    text-align: center;
+    color: aliceblue;
+    margin-top: 50px;
+}
+
+.stationarytable{
+    text-align: center;
+    color: rgb(3, 123, 153);
+    padding-right: 50%;
+    width: 100%;
+}
+
+.clothtable{
+    text-align: center;
+    color: rgb(3, 123, 153);
+    padding-left: 55%;
+    width: 100%;
+}
+
+.head{
+    text-align: center;
+    background-color: rgb(203, 2, 133);
+    color: aliceblue;
+    border-radius: 15px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+table td,table th{
+    border: 1px solid rgb(175, 1, 114);
+    border-radius: 1px;
+    padding: 30px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.slist {
+    align-items: center;
+}
+
+button {
+    color:  whitesmoke;
+    background-color:rgb(3, 123, 153);
+    border-radius: 6px;
+    border: 0cap;
+}
+
+.update{
+    color:  whitesmoke;
+    background-color:rgb(153, 3, 58);
+    border-radius: 6px;
+    border: 0cap;
+}
+
+

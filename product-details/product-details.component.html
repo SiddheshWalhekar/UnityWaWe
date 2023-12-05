@@ -1,0 +1,21 @@
+<div class="row product-details" *ngIf="clothesData">
+<div class="col-sm-5">
+<img class="image" src="{{clothesData.image}}" alt="">
+</div>
+<div class="col-sm-5" >
+    <div class="details">
+        <br><br>
+        <h1><b>{{clothesData.name}}</b></h1>
+        <br>
+        <h3>Quantity: {{clothesData.quantity}}</h3>
+        <h3>Gender: {{clothesData.gender}}</h3>
+        <h4>About Product: {{clothesData.description}}</h4>
+        
+
+        
+    <button class="button" (click)="dialog(id.value)" #id>Contact Donor</button>
+
+    </div>
+   
+</div>
+</div>

@@ -1,0 +1,31 @@
+.home{
+    text-align: center;
+    padding-top: 9px;
+    color: rgb(3, 123, 153);
+    margin: auto;
+    
+}
+
+
+.home img{
+    width: 500px;
+    border: 13px solid  rgb(3, 123, 153);
+    
+    
+}
+
+.button button{
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 140px;
+    margin-right: 140px;
+    background-color: rgb(3, 183, 6);
+    color: aliceblue;
+    border-radius: 20px;
+    border: solid rgb(0, 92, 106);
+}
+
+
+

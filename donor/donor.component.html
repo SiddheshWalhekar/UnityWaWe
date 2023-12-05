@@ -1,0 +1,34 @@
+<div class="img">
+    <img src="assets/donate.png" width="500px" alt="login">
+</div>
+
+<div class="donor-auth">
+    <div *ngIf="!showlogin" class="sign">
+        <img class="logo" src="assets/logo.png" alt="logo">
+        <h1 class="title">Sign-up</h1><br><br>
+        <form #dSignup="ngForm" (ngSubmit)="donorsignUp(dSignup.value)"  class="common-form">
+            <input class="form-input" type="text" ngModel name="name" placeholder="Enter Name"><br>
+            <input class="form-input" type="text" ngModel name="email" placeholder="Enter Email"><br>
+            <input class="form-input" type="number" ngModel name="phone" placeholder="Enter Phone Number"><br>
+            <input class="form-input" type="password" ngModel name="password" placeholder="Enter Password"><br><br>
+            <button class="form-button">Signup</button>
+            <a (click)="openlogin()">Already have an Account? Click here to login.</a>
+        </form>
+    </div>
+
+
+    <!-- Login area-->
+
+    <div *ngIf="showlogin" class="sign">
+        <img class="logo" src="assets/logo.png" alt="logo">
+        <h1 class="title">Login</h1><br><br>
+        <p class="error-p">{{autherror}}</p>
+        <form #dLogin="ngForm" (ngSubmit)="donorLogin(dLogin.value)"  class="common-form">
+            <input class="form-input" type="text" ngModel name="email" placeholder="Enter Email"><br>
+            <input class="form-input" type="password" ngModel name="password" placeholder="Enter Password"><br><br>
+            <button class="form-button">Login</button>
+            <a (click)="opensignup()">Donot have an account? Signup</a>
+        </form>
+    </div>
+
+</div>

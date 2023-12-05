@@ -1,0 +1,54 @@
+<br>
+<h1 class="head">Donations List</h1>
+<div class="slist">
+    <table class="stationarytable">
+        <thead>
+            <tr>
+                <th>image</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Action</th>
+                
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of  stationarylist">
+            
+            
+            <td><img src="{{item.image}}"></td>
+            <td>{{item.name}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.quantity}}</td>
+            <td><button (click)="deleteStationary(item.id)">Delete</button><br><br>
+            <a routerLink="/updatestationary/{{item.id}}"><button>Update</button> </a>
+
+        </tbody>
+    </table>
+</div>
+<br>
+<div class="clist">
+    
+    <table class="clothtable">
+        <thead>
+            <tr>
+                <th>image</th>
+                <th>Clothes Type</th>
+                <th>Gender</th>
+                <th>Description</th>
+                <th>Quantity</th>
+                <th>Action</th>
+                
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of  clotheslist">
+
+            <td><img src="{{item.image}}"></td>
+            <td>{{item.name}}</td>
+            <td>{{item.gender}}</td>
+            <td>{{item.description}}</td>
+            <td>{{item.quantity}}</td>
+            <td><button (click)="deleteClothes(item.id)">Delete</button><br><br>
+            <a class="update" routerLink="/updateclothes/{{item.id}}"><button>Update</button> </a>
+        </tbody>
+    </table>
+</div>

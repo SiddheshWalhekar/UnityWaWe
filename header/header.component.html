@@ -1,0 +1,28 @@
+<div class="nav">
+
+
+    <img src="assets/logo.png" alt="logo">
+    <div class="nav-search">
+        <input 
+        type="text"
+        #searchValue
+         (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search" 
+        
+        />
+        <button (click)="submitSearch(searchValue.value)">Search</button>
+        
+    </div>
+    
+    <ul>
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/donor">Donate</a></li>
+        <li><a routerLink="/login">Login</a></li>
+        <li><a (click)="logout()">Logout</a></li>
+        
+    </ul>
+</div>
+<ul class="suggestion" *ngIf="searchResult">
+    <li *ngFor="let item of searchResult">
+        <a >{{item.name}}</a>
+    </li>
+</ul>

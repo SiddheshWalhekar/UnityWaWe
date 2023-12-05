@@ -1,0 +1,50 @@
+.donor-auth{
+    display: inline-block;
+    margin-top: 100px;
+    margin-left: 500px;
+    background-color: rgb(3, 123, 153);
+    padding-top: 50px;
+    text-align: center;
+    color: aliceblue;
+    width: 500px;
+    
+}
+
+.img{
+    display: inline-block;
+    width: 100px;
+    padding-top: 200px;
+    margin-left: 75px;
+}
+
+
+.common-form{
+    padding-bottom: 10%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column ;
+    width: 300px;
+}
+
+.title{
+    margin-top: 20PX;
+    color:rgb(3, 123, 153);
+    background-color: aliceblue;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.logo{
+
+    width: 100px;
+    background-color: rgb(236, 243, 255);
+}
+
+.error-p{
+    color: rgb(163, 2, 2);
+    background-color: rgb(255, 255, 255);
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 4px;
+}
